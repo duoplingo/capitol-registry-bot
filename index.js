@@ -15,14 +15,14 @@ client.on('guildMemberAdd', async (member) => {
     if (!channel) return;
 
     const embed = new EmbedBuilder()
-      .setAuthor({ name: 'Department of Registry — Year 0 ADD' })
+      .setAuthor({ name: 'Ministry of Induction — Year 0 ADD' })
       .setTitle('Welcome to Velthrone Society')
       .setDescription(
         `Citizen <@${member.user.id}>, your entry has been recorded in the **Capitol Registry**.\n\n` +
         `**Start here:**\n` +
-        `• <#${process.env.INTRODUCTIONS_CHANNEL_ID}>\n` +
-        `• <#${process.env.TREATY_CHANNEL_ID}>\n` +
-        `• <#${process.env.CENTRAL_SQUARE_CHANNEL_ID}>\n\n` +
+        `• <#${process.env.INTRODUCTIONS_CHANNEL_ID}>\n - State your name and origin for Capitol records.` +
+        `• <#${process.env.TREATY_CHANNEL_ID}>\n - The law that binds Panem. Read before speaking.` +
+        `• <#${process.env.CENTRAL_SQUARE_CHANNEL_ID}>\n\n - Authorized space for citizen discussion.` +
         `*(Issued under authority of the Capitol.)*`
       )
       .setColor(0xD9D6CF)
